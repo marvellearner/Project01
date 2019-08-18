@@ -10,7 +10,7 @@
         <title>Hello, world!</title>
 
 </head>
-<body class="p-3 mb-2 bg-dark text-white">
+<body class="p-3 mb-2 text-white">
 
 <div class="container" >
   <div class="row">
@@ -21,14 +21,20 @@
                     <h5><center>Log in to your Account</center></h5>
                         <br>
                         <form name="myform">
-                            <input type="text" id="emailid" value="">
+                            <input type="text" id="emailid" value="" placeholder="Email or username">
                             <br>              
-                            <input type="password" id="pass01" value="">
-                            <br>
-                            <br>
+                            <input type="password" id="pass01" value="" placeholder="Password">
+                            
+                                   <div id="remfor">
+                                        <div id="rememberme">  <input type="checkbox" checked="checked"> Remember me</div>
+                                        <div id ="forgot"><a href="#">Forgot password?</a></div>
+                                </div> 
+                            <br><br>
                             <input value="Sign In" type="submit" class="button" onClick="return myFunction()"></button>
                         </form>
+                       <br> Access <a href="03.html">Highcharts</a>
                  </div>
+                 
          </div>
         </div>
     </div>
@@ -41,6 +47,10 @@ function myFunction(){
             console.log("logged in");
             window.location = "02.html";
             return false;
+        }
+        else
+        {
+            alert("Email or password are incorrect");
         }
 }
 </script>
