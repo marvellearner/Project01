@@ -16,8 +16,8 @@
 $(document).ready(function () {
     $.getJSON("https://jsonplaceholder.typicode.com/photos",
     function (json) {
-        for (var i = 0; i < 40; i++) {
-                      
+        // For loop to set number of images
+        for (var i = 0; i < 40; i++) {                     
             $("#myDiv").append(' <div class="column"> <img src="' + json[i].url + '" style="margin:1px;"></img><br>' + json[i].title + '</div>' );
         }
     });
@@ -26,6 +26,7 @@ $(document).ready(function () {
 </head>
 <body>
         <div class="container">
+            <!-- heading -->
                 <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Admin Gallery</h1>
                 <hr class="mt-2 mb-5">
         </div>

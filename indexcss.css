@@ -1,8 +1,6 @@
 * {
 	margin: 0;
 	padding: 0;
-
-
 }
 
 #form01
@@ -11,11 +9,7 @@
     top: 40%;
     
     -box-shadow: 10px 10px 5px #000000;
-
-
     display: flex;
-    
-  
   justify-content: center;
   width: 90%;
   height:400px;

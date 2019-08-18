@@ -14,26 +14,20 @@
 @media (max-width: 981px) {
 img{
     width : 760px;
-   /* float:left;
-   margin:auto; */
+ 
 }
 .row{
     width:80%;
-  
 }
 .column{
-  
     height:880px;
 font-size: 30px;
 }}
-
-
 
 /* ipad pro screen */
  @media (min-width: 982px) and (max-width: 1100px) {
     img{
         width : 92%;
-       
     }
     .row{
         width:92%;
@@ -41,7 +35,7 @@ font-size: 30px;
     .column{
         width:25%;
         height:310px;
-    }} 
+    }}
 
 
 /* Big screen */
