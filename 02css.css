@@ -13,13 +13,28 @@
 /* mobile screen */
 @media (max-width: 981px) {
 img{
-    width : 900px;
-   
+    width : 820px;
+   /* float:left;
+   margin:auto; */
+}
+
+.column{
+  
+    height:920px;
+font-size: 30px;
 }}
+
+
+
+/* ipad screen */
  @media (min-width: 982px) and (max-width: 1100px) {
     img{
-        width : 430px;
+        width : 250px;
        
+    }
+    .column{
+        width:280px;
+        height:340px;
     }} 
 
 
@@ -27,15 +42,22 @@ img{
 @media (min-width:1101px){
     img{
         width : 215px;
-}}
+}
+.column{
+    width:240px;
+    height:320px;
+}
+
+}
 
 
 
 .column {
     position: relative; 
     float: left;
-width:auto;
-    padding: 2px;
+/* width:auto; */
+
+    padding: 10px;
   }
   
   /* Clearfix (clear floats) */

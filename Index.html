@@ -26,7 +26,7 @@
                             <input type="password" id="pass01" value="">
                             <br>
                             <br>
-                            <button class="button" onclick="myFunction()"> Sign in</button>
+                            <input value="Sign In" type="submit" class="button" onClick="return myFunction()"></button>
                         </form>
                  </div>
          </div>
@@ -36,7 +36,12 @@
 <script>
 function myFunction(){
     if(document.getElementById("emailid").value=="admin" & document.getElementById("pass01").value=="admin@123" )
-        {window.location.href = "https://www.example.com";}
+        {
+
+            console.log("logged in");
+            window.location = "02.html";
+            return false;
+        }
 }
 </script>
 </body>
